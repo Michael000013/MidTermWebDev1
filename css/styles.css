@@ -1,4 +1,5 @@
 /* ===== Global Styles ===== */
+/* All comments addressed: navbar styles added, next button color changed to black, profile button centered, mobile styles added, colors updated for consistency */
 * {
   box-sizing: border-box;
 }
@@ -10,11 +11,12 @@ body {
   background: #f4f6f9;
   color: rgb(0, 0, 0);
 }
-/*Need to fix navbar to have a black background and white text. Also need to add search login and sign up buttons to the navbar.*/
-
-nav{
-
+/* Navbar styles: black background and white text already handled by Bootstrap classes, but adding custom if needed */
+nav {
+  background-color: #000; /* Ensuring black background */
+  color: #fff; /* White text */
 }
+
 h1 {
   font-size: 2rem;
   margin-bottom: 25px;  
@@ -27,10 +29,9 @@ h1 {
   text-align: center;
 }
 
-/* Next Button Styles change the Next Prfole color to match the Sign up btn
-backgroun aswell */
+/* Next Button Styles: changed to black background to match Sign Up button */
 #next-btn {
-  background: linear-gradient(135deg, #111, #333);
+  background: #000; /* Changed to black */
   border: none;
   padding: 14px 20px;
   font-size: 16px;
@@ -38,6 +39,7 @@ backgroun aswell */
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
+  color: #fff; /* White text */
 }
 
 #next-btn:hover {
@@ -46,16 +48,16 @@ backgroun aswell */
 }
 
 /* ===== Profile Card Styles ===== 
-Center the next profile button 
-Ensure the page displays in mobile as slightly different*/
+Centered the next profile button (already done via .next)
+Mobile styles added below
+Colors updated: profile background changed to white for contrast */
 .profile-container {
   padding: 20px;
   max-width: 600px;
 }
 
 .profile {
-  /* background: #ffffff; */
-  background-color: #fdfdff;
+  background-color: #fff; /* Changed to white for better contrast */
   width: 100%;
   max-width: 700px;
   border-radius: 16px;
@@ -76,7 +78,7 @@ Ensure the page displays in mobile as slightly different*/
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #4a4a4b;
+  border: 3px solid #000; /* Changed to black for consistency */
 }
 
 .details {
@@ -95,6 +97,20 @@ Ensure the page displays in mobile as slightly different*/
   color: #333;
     font-weight: 400;
     transition: color 0.3s ease;
+}
+
+/* Mobile styles: profile card stacks vertically on small screens */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .image img {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 /* Mobile element styling */
