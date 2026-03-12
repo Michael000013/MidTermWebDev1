@@ -33,7 +33,6 @@ function fetchUserData() {
     })
     .catch(error => {
       console.error('Error fetching user data:', error);
-      // Fallback to local JSON file for testing
       fetch('./data/user.json')
         .then(response => response.json())
         .then(data => {
@@ -68,7 +67,6 @@ function displayUserProfile(user) {
   let mobileElement = document.getElementById('mobile');
   
   if (!mobileElement) {
-    // Create new element if it doesn't exist
     mobileElement = document.createElement('p');
     mobileElement.id = 'mobile';
     const detailsDiv = document.querySelector('.details');
@@ -80,11 +78,16 @@ function displayUserProfile(user) {
   // Use the users gender to color the background
   // Only change the color of the background behind the profile
   // Male = Steelblue, Female = rebeccapurple
+  // The profile card remains white with black text regardless of the gender
   const profileDiv = document.querySelector('.profile');
+  const body = document.body;
+  
   if (gender === 'male') {
-    profileDiv.style.backgroundColor = 'steelblue';
-    profileDiv.style.color = 'white';
+    body.style.backgroundColor = 'steelblue';
+    profileDiv.style.backgroundColor = '#fff';
+    profileDiv.style.color = '#000';
   } else if (gender === 'female') {
-    profileDiv.style.backgroundColor = 'rebeccapurple';
-    profileDiv.style.color = 'black';
+    body.style.backgroundColor = 'rebeccapurple';
+    profileDiv.style.backgroundColor = '#fff';
+    profileDiv.style.color = '#000';
   }}
