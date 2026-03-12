@@ -1,5 +1,4 @@
 /* ===== Global Styles ===== */
-/* All comments addressed: navbar styles added, next button color changed to black, profile button centered, mobile styles added, colors updated for consistency */
 * {
   box-sizing: border-box;
 }
@@ -10,6 +9,9 @@ body {
                Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   background: #f4f6f9;
   color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* Navbar styles: black background and white text already handled by Bootstrap classes, but adding custom if needed */
 nav {
@@ -19,6 +21,14 @@ nav {
 
 h1 {
   font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   margin-bottom: 25px;  
   font-weight: 700;
   padding-top: 30px; 
@@ -46,6 +56,9 @@ h1 {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
 /* ===== Profile Card Styles ===== 
 Centered the next profile button (already done via .next)
