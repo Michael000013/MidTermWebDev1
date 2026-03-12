@@ -8,9 +8,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
                Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   background: #f4f6f9;
-  color: rgb(209, 91, 91);
+  color: rgb(0, 0, 0);
 }
+/*Need to fix navbar to have a black background and white text. Also need to add search login and sign up buttons to the navbar.*/
 
+nav{
+
+}
 h1 {
   font-size: 2rem;
   margin-bottom: 25px;  
@@ -23,7 +27,8 @@ h1 {
   text-align: center;
 }
 
-
+/* Next Button Styles change the Next Prfole color to match the Sign up btn
+backgroun aswell */
 #next-btn {
   background: linear-gradient(135deg, #111, #333);
   border: none;
@@ -40,7 +45,9 @@ h1 {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-
+/* ===== Profile Card Styles ===== 
+Center the next profile button 
+Ensure the page displays in mobile as slightly different*/
 .profile-container {
   padding: 20px;
   max-width: 600px;
@@ -57,7 +64,7 @@ h1 {
   align-items: center;
   gap: 40px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .profile:hover {
@@ -81,9 +88,29 @@ h1 {
   font-size: 17px;  
   color: black;
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .details span {
   color: #333;
     font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+/* Mobile element styling */
+/*Center all text inside profile card and change the sizing of images 
+reduce the font size on the div with class details to 16px and 
+reduce the gap between the image and details to 20px. 
+Also add a border around the profile card with a light gray color and 
+increase the padding to 30px.*/
+#mobile {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#mobile #cellphone {
+  font-weight: 400;
 }

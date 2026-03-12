@@ -5,26 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css" />    
   <script src="js/script.js"></script>
+  <!-- Load Bootstrap 5.3.0 CSS and JS from CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <title>Random User Generator</title>
 </head>
 <body>
   <div>
       <!-- Navigation -->    
-      <!-- TODO -->
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">User App</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-        </ul>
-      </div>
-      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">User App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+            <form class="d-flex me-3">
+              <input class="form-control me-2" type="search" placeholder="Search users" aria-label="Search">
+              <button class="btn bg-black text-white" type="submit">Search</button>
+            </form>
+            <div class="d-flex">
+              <button class="btn bg-black text-white me-2">Login</button>
+              <button class="btn bg-black text-white">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
 
       <!-- Header -->
       <div>
@@ -49,7 +61,7 @@
           </div>
         </div>
       </div>
-      
+      //Add the next profile button and make sure it is centered and has the same background color as the sign up button. Also make sure the text is white and the button has rounded corners.
 
       <!-- Next Button -->
       <div class="next">
