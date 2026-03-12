@@ -78,6 +78,7 @@ function displayUserProfile(user) {
   mobileElement.innerHTML = `Mobile: <span id="cellphone">${cellphone}</span>`;
   
   // Use the users gender to color the background
+  // Only change the color of the background behind the profile
   // Male = Steelblue, Female = rebeccapurple
   const profileDiv = document.querySelector('.profile');
   if (gender === 'male') {
@@ -85,5 +86,5 @@ function displayUserProfile(user) {
     profileDiv.style.color = 'white';
   } else if (gender === 'female') {
     profileDiv.style.backgroundColor = 'rebeccapurple';
-    profileDiv.style.color = 'white';
+    profileDiv.style.color = 'black';
   }}
